@@ -58,11 +58,15 @@ class TransactionService:
         account_type = account.get('type', 'debit').lower()
         
         if account_type == 'debit':
-            # Debit account: positive = increase, negative = decrease
+            # Debit account: positive amount = money in (increase), negative = money out (decrease)
+            # Example: +100 income = balance increases, -50 expense = balance decreases
             new_balance = account['balance'] + amount
         else:  # credit
-            # Credit account: positive = increase debt, negative = decrease debt
-            new_balance = account['balance'] + amount
+            # Credit account: positive amount = charges/purchases (INCREASE debt owed)
+            #                 negative amount = payments/refunds (DECREASE debt owed)
+            # Example: -50 expense (charge) = debt increases by 50, +50 payment = debt decreases by 50
+            # SO WE SUBTRACT because amounts come in as negative for expenses
+            new_balance = account['balance'] - amount
         
         # Create updated account
         updated_account = account.copy()
@@ -82,6 +86,7 @@ class TransactionService:
                 transaction_id=transaction.get('id'),
                 transaction_title=transaction.get('title')
             )
+
     
     def _handle_transfer(self, transaction):
         """Handle a transfer between accounts"""
@@ -255,8 +260,14 @@ class TransactionService:
         # Get old balance for audit
         old_balance = account['balance']
         
-        # Reverse the effect
-        new_balance = account['balance'] - amount
+        # Get account type
+        account_type = account.get('type', 'debit').lower()
+        
+        # Reverse the effect based on account type
+        if account_type == 'debit':
+            new_balance = account['balance'] - amount
+        else:  # credit
+            new_balance = account['balance'] + amount  # Opposite of apply
         
         # Update account
         updated_account = account.copy()
