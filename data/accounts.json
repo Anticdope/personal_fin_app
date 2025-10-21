@@ -2,7 +2,7 @@
   {
     "name": "Gate City",
     "type": "debit",
-    "balance": 2241.14,
+    "balance": 2040.16,
     "closed": false,
     "id": "acc-58bba97d"
   },
@@ -84,17 +84,6 @@
     "id": "acc-f3fbbe80"
   },
   {
-    "name": "Prime Store Card",
-    "type": "credit",
-    "balance": -98.46,
-    "closed": false,
-    "interest_rate": 29.99,
-    "minimum_payment": 35.0,
-    "original_balance": 0.0,
-    "payment_due_day": 3,
-    "id": "acc-6c9ac534"
-  },
-  {
     "name": "Car Care",
     "type": "credit",
     "balance": 0.0,
@@ -104,5 +93,16 @@
     "original_balance": 0.0,
     "payment_due_day": 20,
     "id": "acc-3795549c"
+  },
+  {
+    "name": "Prime Store Card",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 29.99,
+    "minimum_payment": 35.0,
+    "original_balance": 49.23,
+    "payment_due_day": 3,
+    "id": "acc-7ef10dd4"
   }
 ]

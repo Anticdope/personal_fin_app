@@ -35,6 +35,14 @@ class LiabilityRepository:
                 return liability
         return None
     
+    def get_by_name(self, name):
+        """Get a liability by name"""
+        liabilities = self.get_all()
+        for liability in liabilities:
+            if liability.get('name') == name:
+                return liability
+        return None
+    
     def add(self, liability):
         """Add a new liability"""
         liabilities = self.get_all()
@@ -50,6 +58,8 @@ class LiabilityRepository:
             liability['minimum_payment'] = 0.0
         if 'original_balance' not in liability:
             liability['original_balance'] = liability.get('balance', 0.0)
+        if 'payment_due_day' not in liability:
+            liability['payment_due_day'] = None  # Day of month (1-31)
         
         liabilities.append(liability)
         self.save_all(liabilities)

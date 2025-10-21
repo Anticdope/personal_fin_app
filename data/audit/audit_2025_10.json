@@ -1150,5 +1150,85 @@
       "reason": "transaction_add",
       "transaction_title": "Prime Adjust"
     }
+  },
+  {
+    "timestamp": "2025-10-20T20:55:45.039207",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-6c9ac534",
+    "entity_name": "Prime Store Card",
+    "changes": {
+      "old_balance": -98.46,
+      "new_balance": -147.69,
+      "change_amount": -49.230000000000004
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Prime Adjust"
+    }
+  },
+  {
+    "timestamp": "2025-10-20T20:55:53.002867",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-58bba97d",
+    "entity_name": "Gate City",
+    "changes": {
+      "old_balance": 2241.14,
+      "new_balance": 2290.37,
+      "change_amount": 49.23000000000002
+    },
+    "metadata": {
+      "reason": "debt_payment_reverse",
+      "transaction_title": "Prime Payment"
+    }
+  },
+  {
+    "timestamp": "2025-10-20T20:55:53.016450",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-6c9ac534",
+    "entity_name": "Prime Store Card",
+    "changes": {
+      "old_balance": -147.69,
+      "new_balance": -98.46000000000001,
+      "change_amount": 49.22999999999999
+    },
+    "metadata": {
+      "reason": "debt_payment_reverse",
+      "transaction_title": "Prime Payment"
+    }
+  },
+  {
+    "timestamp": "2025-10-20T20:57:54.083485",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-7ef10dd4",
+    "entity_name": "Prime Store Card",
+    "changes": {
+      "old_balance": 49.23,
+      "new_balance": 0.0,
+      "change_amount": -49.23
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Prime Payment"
+    }
+  },
+  {
+    "timestamp": "2025-10-20T20:57:54.095547",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-58bba97d",
+    "entity_name": "Gate City",
+    "changes": {
+      "old_balance": 2290.37,
+      "new_balance": 2241.14,
+      "change_amount": -49.23000000000002
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Prime Payment"
+    }
   }
 ]

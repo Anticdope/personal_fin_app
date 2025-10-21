@@ -38,16 +38,6 @@
       "target_type": "credit",
       "status": "posted",
       "category_id": "cat-e039decd"
-    },
-    {
-      "title": "Prime Adjust",
-      "amount": -49.23,
-      "category": "Balance Adjustment",
-      "account": "Prime Store Card",
-      "transaction_type": "Expense",
-      "status": "posted",
-      "category_id": "cat-47864dd4",
-      "account_id": "acc-6c9ac534"
     }
   ],
   "10": [
@@ -59,6 +49,28 @@
       "target_account": "Fidelity Investment Fund",
       "status": "posted",
       "category_id": "cat-a81f0127"
+    }
+  ],
+  "3": [
+    {
+      "title": "Reach",
+      "amount": 100.49,
+      "category": "Debt Payment",
+      "source_account": "Gate City",
+      "target_debt": "Reach Loan",
+      "target_type": "liability",
+      "status": "posted",
+      "category_id": "cat-e039decd"
+    },
+    {
+      "title": "Reach",
+      "amount": 100.49,
+      "category": "Debt Payment",
+      "source_account": "Gate City",
+      "target_debt": "Reach Loan",
+      "target_type": "liability",
+      "status": "posted",
+      "category_id": "cat-e039decd"
     }
   ]
 }
