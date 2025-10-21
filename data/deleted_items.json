@@ -1,0 +1,73 @@
+{
+  "categories": [],
+  "accounts": [
+    {
+      "item": {
+        "name": "Citi Bank",
+        "type": "credit",
+        "balance": 60.0,
+        "closed": false,
+        "interest_rate": 29.99,
+        "minimum_payment": 35.0,
+        "original_balance": 60.0,
+        "payment_due_day": 2,
+        "id": "acc-1c9a401d"
+      },
+      "deleted_at": "2025-10-20T19:49:12.707044"
+    }
+  ],
+  "transactions": [
+    {
+      "item": {
+        "account": "Prime Store Card",
+        "amount": -49.23,
+        "category": "Balance Adjustment",
+        "status": "posted",
+        "title": "Prime Store Balance Adjustment",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2025,
+        "month": 10,
+        "day": 1
+      },
+      "deleted_at": "2025-10-20T20:19:14.010447"
+    },
+    {
+      "item": {
+        "account": "Prime Store Card",
+        "amount": -49.23,
+        "category": "Balance Adjustment",
+        "status": "posted",
+        "title": "Prime Adjustment",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2025,
+        "month": 10,
+        "day": 1
+      },
+      "deleted_at": "2025-10-20T20:21:29.812074"
+    },
+    {
+      "item": {
+        "account": "Prime Store Card",
+        "account_id": "acc-6c9ac534",
+        "amount": -49.23,
+        "category": "Balance Adjustment",
+        "category_id": "cat-47864dd4",
+        "status": "posted",
+        "title": "Prime Adjustment",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2025,
+        "month": 10,
+        "day": 1
+      },
+      "deleted_at": "2025-10-20T20:22:03.764643"
+    }
+  ],
+  "assets": [],
+  "liabilities": []
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cat-fed27a90",
+    "name": "General Income",
+    "color": "#27AE60",
+    "type": "income",
+    "special": true,
+    "budget": 0.0
+  },
+  {
+    "id": "cat-ba606f89",
+    "name": "General Expense",
+    "color": "#E74C3C",
+    "type": "expense",
+    "special": true,
+    "budget": 0.0
+  },
+  {
+    "id": "cat-40de141a",
+    "name": "General Savings",
+    "color": "#3498DB",
+    "type": "savings",
+    "special": true,
+    "budget": 0.0
+  },
+  {
+    "id": "cat-a81f0127",
+    "name": "Transfer",
+    "color": "#95A5A6",
+    "type": "special",
+    "special": true,
+    "budget": 0.0
+  },
+  {
+    "id": "cat-e039decd",
+    "name": "Debt Payment",
+    "color": "#E67E22",
+    "type": "special",
+    "special": true,
+    "budget": 0.0
+  },
+  {
+    "name": "Employment",
+    "color": "#07d626",
+    "budget": 0.0,
+    "type": "income",
+    "id": "cat-b0186020"
+  },
+  {
+    "name": "Balance Adjustment",
+    "color": "#000000",
+    "budget": 0.0,
+    "type": "expense",
+    "id": "cat-47864dd4"
+  }
+]
