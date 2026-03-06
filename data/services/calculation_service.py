@@ -134,10 +134,15 @@ class CalculationService:
         
         for transaction in transactions:
             amount = float(transaction.get('amount', 0))
+            category = transaction.get('category')
             
             # Skip transfers
-            if transaction.get('category') == 'Transfer':
+            if category == 'Transfer':
                 continue
+            
+            # Debt payments use positive amounts but represent money leaving the source account
+            if category == 'Debt Payment':
+                amount = -abs(amount)
             
             if transaction.get('status') == 'pending':
                 pending_total += amount

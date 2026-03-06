@@ -1,49 +1,51 @@
 """
-Asset Controller - Coordinates Model and View
+ui/panes/asset/controller.py
+
+Asset Controller.
+Updated: Wires DraggableCardContainer order_changed signal to CardOrderRepository.
 """
 from .model import AssetModel
 from .view import AssetView
+from data.repositories.card_order_repository import CardOrderRepository
+
+PANE_KEY = "assets"
 
 
 class AssetController:
-    """
-    Controller: Coordinates between Model and View
-    """
-    
+    """Controller: Coordinates between Model and View"""
+
     def __init__(self, data_manager, parent=None):
         self.model = AssetModel(data_manager)
         self.view = AssetView(parent)
         self.current_year = None
         self.current_month = None
-    
+        self._order_repo = CardOrderRepository(data_manager.data_dir)
+
+        self.view.card_container.order_changed.connect(self._on_order_changed)
+
     def update_data(self, year, month):
-        """
-        Update the display with new data
-        Note: Asset values don't change by month, but we accept
-        year/month for consistency with other panes
-        """
         self.current_year = year
         self.current_month = month
-        
-        # Get data from model
+
         assets_data = self.model.get_assets_data()
-        
-        # Update view
         self.view.display_assets(assets_data)
-    
+
+        saved_order = self._order_repo.get_order(PANE_KEY)
+        if saved_order:
+            self.view.card_container.set_order(saved_order)
+
     def refresh(self):
-        """Refresh with current year/month"""
         if self.current_year and self.current_month:
             self.update_data(self.current_year, self.current_month)
-    
+
+    def _on_order_changed(self, new_order):
+        self._order_repo.save_order(PANE_KEY, new_order)
+
     def set_dark_mode(self, enabled):
-        """Pass theme change to view"""
         self.view.set_dark_mode(enabled)
-    
+
     def get_widget(self):
-        """Return the view widget for adding to layouts"""
         return self.view
-    
+
     def get_pane_name(self):
-        """Return display name for this pane"""
         return "Assets"

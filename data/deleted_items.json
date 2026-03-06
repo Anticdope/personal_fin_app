@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "item": {
+        "name": "Books",
+        "color": "#808080",
+        "budget": 100.0,
+        "type": "expense",
+        "id": "cat-d11f3d48"
+      },
+      "deleted_at": "2026-02-21T20:11:01.257610"
+    }
+  ],
+  "accounts": [],
+  "transactions": [
+    {
+      "item": {
+        "account": "Gate City",
+        "account_id": "acc-849ae440",
+        "amount": -2234.0,
+        "category": "Rent",
+        "category_id": "cat-bad41d3c",
+        "status": "posted",
+        "title": "Rent",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2026,
+        "month": 6,
+        "day": 1
+      },
+      "deleted_at": "2026-02-22T17:44:21.040054"
+    },
+    {
+      "item": {
+        "account": "Gate City",
+        "amount": -2234.0,
+        "category": "Rent",
+        "status": "posted",
+        "title": "Rent",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2026,
+        "month": 6,
+        "day": 1
+      },
+      "deleted_at": "2026-02-22T17:46:03.829617"
+    }
+  ],
+  "assets": [],
+  "liabilities": []
+}

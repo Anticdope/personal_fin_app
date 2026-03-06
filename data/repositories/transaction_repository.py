@@ -15,7 +15,7 @@ class TransactionRepository:
     
     def _get_month_file(self, year, month):
         """Get the file path for a specific month"""
-        return self.data_dir / f"transactions_{year}_{month:02d}.json"
+        return self.data_dir / f"{year}-{month:02d}.json"
     
     def get_month_data(self, year, month):
         """Load transaction data for a month"""
@@ -64,6 +64,14 @@ class TransactionRepository:
         data = self.get_month_data(year, month)
         day_key = str(day)
         return data.get(day_key, [])
+    
+    def get_all_transactions(self, year, month):
+        """Get all transactions for a month as a flat list"""
+        data = self.get_month_data(year, month)
+        all_transactions = []
+        for day_transactions in data.values():
+            all_transactions.extend(day_transactions)
+        return all_transactions
     
     def add_transaction(self, year, month, day, transaction):
         """Add a transaction to a specific day with validation"""

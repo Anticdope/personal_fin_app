@@ -1,49 +1,51 @@
 """
-Liability Controller - Coordinates Model and View
+ui/panes/liability/controller.py
+
+Liability Controller.
+Updated: Wires DraggableCardContainer order_changed signal to CardOrderRepository.
 """
 from .model import LiabilityModel
 from .view import LiabilityView
+from data.repositories.card_order_repository import CardOrderRepository
+
+PANE_KEY = "liabilities"
 
 
 class LiabilityController:
-    """
-    Controller: Coordinates between Model and View
-    """
-    
+    """Controller: Coordinates between Model and View"""
+
     def __init__(self, data_manager, parent=None):
         self.model = LiabilityModel(data_manager)
         self.view = LiabilityView(parent)
         self.current_year = None
         self.current_month = None
-    
+        self._order_repo = CardOrderRepository(data_manager.data_dir)
+
+        self.view.card_container.order_changed.connect(self._on_order_changed)
+
     def update_data(self, year, month):
-        """
-        Update the display with new data
-        Note: Liability balances don't change by month, but we accept
-        year/month for consistency with other panes
-        """
         self.current_year = year
         self.current_month = month
-        
-        # Get data from model
+
         liabilities_data = self.model.get_liabilities_data()
-        
-        # Update view
         self.view.display_liabilities(liabilities_data)
-    
+
+        saved_order = self._order_repo.get_order(PANE_KEY)
+        if saved_order:
+            self.view.card_container.set_order(saved_order)
+
     def refresh(self):
-        """Refresh with current year/month"""
         if self.current_year and self.current_month:
             self.update_data(self.current_year, self.current_month)
-    
+
+    def _on_order_changed(self, new_order):
+        self._order_repo.save_order(PANE_KEY, new_order)
+
     def set_dark_mode(self, enabled):
-        """Pass theme change to view"""
         self.view.set_dark_mode(enabled)
-    
+
     def get_widget(self):
-        """Return the view widget for adding to layouts"""
         return self.view
-    
+
     def get_pane_name(self):
-        """Return display name for this pane"""
         return "Liabilities"

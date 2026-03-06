@@ -24,11 +24,16 @@ class CategoryRepository:
         if self.file_path.exists():
             with open(self.file_path, 'r') as f:
                 categories = json.load(f)
-                # Ensure default categories exist with types
-                return self._ensure_default_categories(categories)
-        else:
-            # Return defaults
-            return self._get_default_categories()
+                for cat in categories:
+                    if 'type' not in cat:
+                        cat['type'] = 'expense'
+                return categories
+        return []
+
+    def initialize_defaults(self):
+        """Seed default categories if none exist. Call at app startup."""
+        if not self.file_path.exists() or not self.get_all():
+            self.save_all(self._get_default_categories())
     
     def save_all(self, categories):
         """
@@ -87,7 +92,8 @@ class CategoryRepository:
     def delete(self, category):
         """Delete a category"""
         categories = self.get_all()
-        categories.remove(category)
+        category_id = category.get('id')
+        categories = [c for c in categories if c.get('id') != category_id]
         self.save_all(categories)
     
     def _get_default_categories(self):

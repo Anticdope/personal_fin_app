@@ -70,7 +70,8 @@ class DataManager:
         )
         self.recurring_service = RecurringService(
             self.recurring_repo,
-            self.transaction_repo
+            self.transaction_repo,
+            self.transaction_service  # So it can apply balances when auto-posting
         )
         
         # Deleted items service
@@ -119,19 +120,17 @@ class DataManager:
         # This is handled by repository now, but kept for compatibility
         pass
     
-    def add_category(self, category_name):
+    def add_category(self, category_data):
         """Add a new category"""
-        category = self.category_repo.add(category_name)
+        category = self.category_repo.add(category_data)
         self.categories = self.category_repo.get_all()  # Refresh
         return category
     
-    def delete_category(self, category_name):
+    def delete_category(self, category):
         """Delete a category (soft delete)"""
-        category = next((c for c in self.categories if c['name'] == category_name), None)
-        if category:
-            self.deleted_items_manager.archive_category(category)
-            self.category_repo.delete(category_name)
-            self.categories = self.category_repo.get_all()  # Refresh
+        self.deleted_items_manager.archive_category(category)
+        self.category_repo.delete(category)
+        self.categories = self.category_repo.get_all()  # Refresh
 
     def update_category(self, old_category, new_category):
         """Update an existing category"""

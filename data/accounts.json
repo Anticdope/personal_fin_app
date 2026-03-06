@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Gate City",
+    "type": "debit",
+    "balance": 1931.20,
+    "closed": false,
+    "id": "acc-849ae440"
+  },
+  {
+    "name": "Paypal Mastercard",
+    "type": "credit",
+    "balance": 4085.29,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 124.0,
+    "original_balance": 4085.29,
+    "payment_due_day": 7,
+    "credit_limit": 4000.0,
+    "id": "acc-d53ed750"
+  },
+  {
+    "name": "Paypal Credit",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 18.99,
+    "original_balance": 18.99,
+    "payment_due_day": 18,
+    "credit_limit": 2000.0,
+    "id": "acc-9381dbcc"
+  },
+  {
+    "name": "Citi Diamond",
+    "type": "credit",
+    "balance": 110.2,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 200.0,
+    "original_balance": 110.2,
+    "payment_due_day": 2,
+    "credit_limit": 200.0,
+    "id": "acc-edc004a6"
+  },
+  {
+    "name": "Citi Costco",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 0.0,
+    "original_balance": 0.0,
+    "payment_due_day": 15,
+    "credit_limit": 5700.0,
+    "id": "acc-55e2d371"
+  },
+  {
+    "name": "Fidelity",
+    "type": "debit",
+    "balance": 0.0,
+    "closed": false,
+    "id": "acc-d7dddc08"
+  },
+  {
+    "name": "Dillan Chime",
+    "type": "debit",
+    "balance": 0.0,
+    "closed": false,
+    "id": "acc-6505688e"
+  },
+  {
+    "name": "Credit One",
+    "type": "credit",
+    "balance": 1881.96,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 25.0,
+    "original_balance": 1881.96,
+    "payment_due_day": 18,
+    "credit_limit": 2000.0,
+    "id": "acc-e47105f2"
+  },
+  {
+    "name": "Prime Store",
+    "type": "credit",
+    "balance": 287.85,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 25.0,
+    "original_balance": 287.85,
+    "payment_due_day": 3,
+    "credit_limit": 500.0,
+    "id": "acc-9fbbf052"
+  },
+  {
+    "name": "Capital One Low Limit",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 0.0,
+    "original_balance": 0.0,
+    "payment_due_day": null,
+    "credit_limit": 200.0,
+    "id": "acc-ad4e8bd7"
+  },
+  {
+    "name": "Capital One High Limit",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 0.0,
+    "original_balance": 0.0,
+    "payment_due_day": null,
+    "credit_limit": 4000.0,
+    "id": "acc-2ec5e5d1"
+  },
+  {
+    "name": "Car Care",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 0.0,
+    "original_balance": 0.0,
+    "payment_due_day": null,
+    "credit_limit": 250.0,
+    "id": "acc-d3191a89"
+  },
+  {
+    "name": "Nami Chime",
+    "type": "debit",
+    "balance": 0.0,
+    "closed": false,
+    "id": "acc-ee59f19b"
+  },
+  {
+    "name": "Thai Bank Account",
+    "type": "debit",
+    "balance": 0.0,
+    "closed": false,
+    "id": "acc-171c81fc"
+  },
+  {
+    "name": "KTC Card",
+    "type": "credit",
+    "balance": 0.0,
+    "closed": false,
+    "interest_rate": 0.0,
+    "minimum_payment": 0.0,
+    "original_balance": 0.0,
+    "payment_due_day": null,
+    "credit_limit": 2000.0,
+    "id": "acc-713ce10c"
+  }
+]

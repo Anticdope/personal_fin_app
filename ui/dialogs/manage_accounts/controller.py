@@ -61,13 +61,11 @@ class AccountManagementController:
     
     def load_accounts(self):
         """Load and display all accounts"""
-        # Get accounts based on closed visibility setting
         if self.view.show_closed_accounts:
             accounts = self.model.get_all_accounts()
         else:
             accounts = self.model.get_active_accounts()
         
-        # Get summary data for each account
         accounts_data = []
         for account in accounts:
             summary = self.model.get_account_summary(account['name'])
@@ -90,6 +88,7 @@ class AccountManagementController:
         interest_rate = None
         minimum_payment = None
         payment_due_day = None
+        credit_limit = None
         
         if data['type'].lower() == 'credit':
             valid, interest_rate, error_msg = self.model.validate_interest_rate(data.get('interest_rate', ''))
@@ -106,6 +105,11 @@ class AccountManagementController:
             if not valid:
                 self.view.show_error(error_msg)
                 return
+            
+            valid, credit_limit, error_msg = self.model.validate_credit_limit(data.get('credit_limit', ''))
+            if not valid:
+                self.view.show_error(error_msg)
+                return
         
         # Add account
         success, message = self.model.add_account(
@@ -114,7 +118,8 @@ class AccountManagementController:
             balance_value,
             interest_rate,
             minimum_payment,
-            payment_due_day
+            payment_due_day,
+            credit_limit
         )
         
         if success:
@@ -151,6 +156,7 @@ class AccountManagementController:
         interest_rate = None
         minimum_payment = None
         payment_due_day = None
+        credit_limit = None
         
         if data['type'].lower() == 'credit':
             valid, interest_rate, error_msg = self.model.validate_interest_rate(data.get('interest_rate', ''))
@@ -167,6 +173,11 @@ class AccountManagementController:
             if not valid:
                 self.view.show_error(error_msg)
                 return
+            
+            valid, credit_limit, error_msg = self.model.validate_credit_limit(data.get('credit_limit', ''))
+            if not valid:
+                self.view.show_error(error_msg)
+                return
         
         # Update account
         success, message = self.model.update_account(
@@ -176,7 +187,8 @@ class AccountManagementController:
             balance_value,
             interest_rate,
             minimum_payment,
-            payment_due_day
+            payment_due_day,
+            credit_limit
         )
         
         if success:
@@ -191,11 +203,9 @@ class AccountManagementController:
         """Handle delete request from account card"""
         account_name = account_data['name']
         
-        # Confirm deletion
         if not self.view.confirm_delete("account", account_name):
             return
         
-        # Delete account
         success, message = self.model.delete_account(account_name)
         
         if success:
@@ -208,11 +218,9 @@ class AccountManagementController:
         """Handle close account request"""
         account_name = account_data['name']
         
-        # Confirm closing
         if not self.view.confirm_close(account_name):
             return
         
-        # Close account
         success, message = self.model.close_account(account_name)
         
         if success:
@@ -225,7 +233,6 @@ class AccountManagementController:
         """Handle reopen account request"""
         account_name = account_data['name']
         
-        # Reopen account
         success, message = self.model.reopen_account(account_name)
         
         if success:
@@ -236,20 +243,13 @@ class AccountManagementController:
     
     def on_show_closed_toggled(self, checked):
         """Handle show/hide closed accounts toggle"""
-        print(f"DEBUG CONTROLLER: Toggle received, checked={checked}")
-        
-        # Update the view's state
         self.view.show_closed_accounts = checked
         
-        # Update button text
         if checked:
             self.view.show_closed_checkbox.setText("Hide Closed Accounts")
         else:
             self.view.show_closed_checkbox.setText("Show Closed Accounts")
         
-        print(f"DEBUG CONTROLLER: About to load accounts, show_closed={self.view.show_closed_accounts}")
-        
-        # Reload accounts
         self.load_accounts()
     
     # ===== ASSET METHODS =====
@@ -273,7 +273,6 @@ class AccountManagementController:
             self.view.show_error("Invalid value amount")
             return
         
-        # Add asset
         new_asset = {
             'name': data['name'],
             'value': value,
@@ -299,7 +298,6 @@ class AccountManagementController:
             self.view.show_error("No asset selected")
             return
         
-        old_name = self.editing_asset['name']
         data = self.view.get_asset_form_data()
         
         if not data['name']:
@@ -312,7 +310,6 @@ class AccountManagementController:
             self.view.show_error("Invalid value amount")
             return
         
-        # Update asset
         old_asset = self.editing_asset
         new_asset = {
             'name': data['name'],
@@ -332,15 +329,10 @@ class AccountManagementController:
     
     def on_delete_asset_requested(self, asset):
         """Handle delete request from asset card"""
-        asset_name = asset['name']
-        
-        # Confirm deletion
-        if not self.view.confirm_delete("asset", asset_name):
+        if not self.view.confirm_delete("asset", asset['name']):
             return
         
-        # Delete asset
         self.data_manager.delete_asset(asset)
-        
         self.view.show_success("Asset deleted successfully")
         self.load_assets()
     
@@ -365,7 +357,6 @@ class AccountManagementController:
             self.view.show_error("Invalid balance amount")
             return
         
-        # Validate interest rate and minimum payment
         try:
             interest_rate = float(data['interest_rate']) if data['interest_rate'] else 0.0
             if interest_rate < 0:
@@ -384,13 +375,11 @@ class AccountManagementController:
             self.view.show_error("Invalid minimum payment amount")
             return
         
-        # Validate payment due day
         valid, payment_due_day, error_msg = self.model.validate_payment_due_day(data.get('payment_due_day', ''))
         if not valid:
             self.view.show_error(error_msg)
             return
         
-        # Add liability
         new_liability = {
             'name': data['name'],
             'balance': balance,
@@ -432,33 +421,26 @@ class AccountManagementController:
             self.view.show_error("Invalid balance amount")
             return
         
-        # Validate interest rate and minimum payment
         try:
             interest_rate = float(data['interest_rate']) if data['interest_rate'] else 0.0
-            if interest_rate < 0:
-                self.view.show_error("Interest rate cannot be negative")
-                return
         except ValueError:
             self.view.show_error("Invalid interest rate")
             return
         
         try:
             minimum_payment = float(data['minimum_payment']) if data['minimum_payment'] else 0.0
-            if minimum_payment < 0:
-                self.view.show_error("Minimum payment cannot be negative")
-                return
         except ValueError:
             self.view.show_error("Invalid minimum payment amount")
             return
         
-        # Update liability
         old_liability = self.editing_liability
         new_liability = {
             'name': data['name'],
             'balance': balance,
             'original_balance': old_liability.get('original_balance', balance),
             'interest_rate': interest_rate,
-            'minimum_payment': minimum_payment
+            'minimum_payment': minimum_payment,
+            'payment_due_day': old_liability.get('payment_due_day')
         }
         
         success = self.data_manager.update_liability(old_liability, new_liability)
@@ -473,20 +455,15 @@ class AccountManagementController:
     
     def on_delete_liability_requested(self, liability):
         """Handle delete request from liability card"""
-        liability_name = liability['name']
-        
-        # Confirm deletion
-        if not self.view.confirm_delete("liability", liability_name):
+        if not self.view.confirm_delete("liability", liability['name']):
             return
         
-        # Delete liability
         self.data_manager.delete_liability(liability)
-        
         self.view.show_success("Liability deleted successfully")
         self.load_liabilities()
     
     def exec(self):
-        """Show dialog and return result"""
+        """Show the dialog"""
         return self.view.exec()
     
     def set_dark_mode(self, enabled):

@@ -69,6 +69,10 @@ class AssetRepository:
         if 'value' not in asset:
             asset['value'] = 0.0
         
+        # Preserve original value at creation time
+        if 'original_value' not in asset:
+            asset['original_value'] = asset.get('value', 0.0)
+        
         # Validate
         if self.validation_service:
             valid, errors = self.validation_service.validate_asset(asset)
@@ -85,6 +89,12 @@ class AssetRepository:
         
         # Preserve ID
         new_asset['id'] = old_asset.get('id')
+        
+        # Preserve original_value - never allow it to be overwritten
+        if 'original_value' in old_asset:
+            new_asset['original_value'] = old_asset['original_value']
+        elif 'original_value' not in new_asset:
+            new_asset['original_value'] = old_asset.get('value', 0.0)
         
         # Validate
         if self.validation_service:

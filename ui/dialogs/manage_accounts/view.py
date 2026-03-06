@@ -154,6 +154,17 @@ class AccountManagementView(QDialog):
         due_day_layout.addWidget(self.account_due_day_input)
         debt_fields_layout.addLayout(due_day_layout)
         
+        # Credit limit
+        credit_limit_layout = QHBoxLayout()
+        credit_limit_label = QLabel("Credit Limit:")
+        credit_limit_label.setObjectName("formLabel")
+        self.account_credit_limit_input = QLineEdit()
+        self.account_credit_limit_input.setObjectName("formInput")
+        self.account_credit_limit_input.setPlaceholderText("e.g., 5000.00")
+        credit_limit_layout.addWidget(credit_limit_label)
+        credit_limit_layout.addWidget(self.account_credit_limit_input)
+        debt_fields_layout.addLayout(credit_limit_layout)
+        
         self.debt_fields_container.setVisible(False)  # Hidden by default
         form_layout.addWidget(self.debt_fields_container)
         
@@ -320,21 +331,21 @@ class AccountManagementView(QDialog):
         interest_label.setObjectName("formLabel")
         self.liability_interest_input = QLineEdit()
         self.liability_interest_input.setObjectName("formInput")
-        self.liability_interest_input.setPlaceholderText("e.g., 3.5")
+        self.liability_interest_input.setPlaceholderText("e.g., 6.5")
         interest_layout.addWidget(interest_label)
         interest_layout.addWidget(self.liability_interest_input)
         form_layout.addLayout(interest_layout)
         
         # Minimum payment
-        payment_layout = QHBoxLayout()
-        payment_label = QLabel("Minimum Payment:")
-        payment_label.setObjectName("formLabel")
+        min_payment_layout = QHBoxLayout()
+        min_payment_label = QLabel("Minimum Payment:")
+        min_payment_label.setObjectName("formLabel")
         self.liability_min_payment_input = QLineEdit()
         self.liability_min_payment_input.setObjectName("formInput")
-        self.liability_min_payment_input.setPlaceholderText("e.g., 500.00")
-        payment_layout.addWidget(payment_label)
-        payment_layout.addWidget(self.liability_min_payment_input)
-        form_layout.addLayout(payment_layout)
+        self.liability_min_payment_input.setPlaceholderText("e.g., 150.00")
+        min_payment_layout.addWidget(min_payment_label)
+        min_payment_layout.addWidget(self.liability_min_payment_input)
+        form_layout.addLayout(min_payment_layout)
         
         # Buttons
         button_layout = QHBoxLayout()
@@ -374,7 +385,7 @@ class AccountManagementView(QDialog):
     # ===== DISPLAY METHODS =====
     
     def display_accounts(self, accounts_data):
-        """Display accounts as cards"""
+        """Display list of account cards"""
         # Clear existing
         while self.accounts_layout.count():
             child = self.accounts_layout.takeAt(0)
@@ -437,6 +448,19 @@ class AccountManagementView(QDialog):
         info.addStretch()
         layout.addLayout(info)
         
+        # Credit limit / utilization row for credit accounts
+        if account_data.get('type', '').lower() == 'credit':
+            credit_limit = account_data.get('credit_limit')
+            if credit_limit:
+                utilization = (balance / credit_limit * 100) if credit_limit > 0 else 0
+                util_label = QLabel(
+                    f"Limit: ${credit_limit:,.2f}  |  Utilization: {utilization:.1f}%"
+                )
+                util_label.setObjectName(
+                    "negativeLabel" if utilization > 30 else "positiveLabel"
+                )
+                layout.addWidget(util_label)
+        
         # Buttons
         buttons = QHBoxLayout()
         
@@ -450,86 +474,62 @@ class AccountManagementView(QDialog):
             reopen_btn.clicked.connect(lambda: self.reopen_account_requested.emit(account_data))
             buttons.addWidget(reopen_btn)
         else:
-            if account_data['transaction_count'] > 0:
-                close_btn = QPushButton("Close")
-                close_btn.setObjectName("warningButton")
-                close_btn.clicked.connect(lambda: self.close_account_requested.emit(account_data))
-                buttons.addWidget(close_btn)
-            else:
-                delete_btn = QPushButton("Delete")
-                delete_btn.setObjectName("dangerButton")
-                delete_btn.clicked.connect(lambda: self.delete_account_requested.emit(account_data))
-                buttons.addWidget(delete_btn)
+            close_btn = QPushButton("Close")
+            close_btn.setObjectName("secondaryButton")
+            close_btn.clicked.connect(lambda: self.close_account_requested.emit(account_data))
+            buttons.addWidget(close_btn)
+        
+        delete_btn = QPushButton("Delete")
+        delete_btn.setObjectName("dangerButton")
+        delete_btn.clicked.connect(lambda: self.delete_account_requested.emit(account_data))
+        buttons.addWidget(delete_btn)
         
         buttons.addStretch()
         layout.addLayout(buttons)
         
         return frame
     
-    def display_assets(self, assets):
-        """Display assets as cards"""
+    def display_assets(self, assets_data):
+        """Display list of asset cards"""
         while self.assets_layout.count():
             child = self.assets_layout.takeAt(0)
             if child.widget():
                 child.widget().deleteLater()
         
-        if not assets:
+        if not assets_data:
             no_assets = QLabel("No assets yet")
             no_assets.setObjectName("mutedLabel")
             no_assets.setAlignment(Qt.AlignCenter)
             self.assets_layout.addWidget(no_assets)
             return
         
-        for asset in assets:
+        for asset in assets_data:
             card = self.create_asset_card(asset)
             self.assets_layout.addWidget(card)
     
     def create_asset_card(self, asset):
-        """Create a card widget for an asset"""
+        """Create a card for an asset"""
         frame = QFrame()
         frame.setObjectName("cardFrame")
         layout = QVBoxLayout(frame)
         
-        header = QHBoxLayout()
         name_label = QLabel(asset['name'])
         name_label.setObjectName("subtitle")
-        header.addWidget(name_label)
-        header.addStretch()
-        layout.addLayout(header)
+        layout.addWidget(name_label)
         
         info = QHBoxLayout()
-        value = asset.get('value', 0)
-        original_value = asset.get('original_value', value)
-        
-        value_label = QLabel(f"Value: ${value:,.2f}")
+        value_label = QLabel(f"Value: ${asset.get('value', 0):,.2f}")
         value_label.setObjectName("positiveLabel")
-        
-        original_label = QLabel(f"Original: ${original_value:,.2f}")
-        original_label.setObjectName("mutedLabel")
-        
-        change = value - original_value
-        if change != 0:
-            change_label = QLabel(f"Change: ${change:+,.2f}")
-            if change >= 0:
-                change_label.setObjectName("positiveLabel")
-            else:
-                change_label.setObjectName("negativeLabel")
-            info.addWidget(change_label)
-        
         info.addWidget(value_label)
-        info.addWidget(original_label)
         info.addStretch()
         layout.addLayout(info)
         
         buttons = QHBoxLayout()
-        
         edit_btn = QPushButton("Edit")
         edit_btn.clicked.connect(lambda: self.edit_asset_requested.emit(asset))
-        
         delete_btn = QPushButton("Delete")
         delete_btn.setObjectName("dangerButton")
         delete_btn.clicked.connect(lambda: self.delete_asset_requested.emit(asset))
-        
         buttons.addWidget(edit_btn)
         buttons.addWidget(delete_btn)
         buttons.addStretch()
@@ -537,67 +537,47 @@ class AccountManagementView(QDialog):
         
         return frame
     
-    def display_liabilities(self, liabilities):
-        """Display liabilities as cards"""
+    def display_liabilities(self, liabilities_data):
+        """Display list of liability cards"""
         while self.liabilities_layout.count():
             child = self.liabilities_layout.takeAt(0)
             if child.widget():
                 child.widget().deleteLater()
         
-        if not liabilities:
-            no_liabilities = QLabel("No liabilities yet")
-            no_liabilities.setObjectName("mutedLabel")
-            no_liabilities.setAlignment(Qt.AlignCenter)
-            self.liabilities_layout.addWidget(no_liabilities)
+        if not liabilities_data:
+            no_liab = QLabel("No liabilities yet")
+            no_liab.setObjectName("mutedLabel")
+            no_liab.setAlignment(Qt.AlignCenter)
+            self.liabilities_layout.addWidget(no_liab)
             return
         
-        for liability in liabilities:
+        for liability in liabilities_data:
             card = self.create_liability_card(liability)
             self.liabilities_layout.addWidget(card)
     
     def create_liability_card(self, liability):
-        """Create a card widget for a liability"""
+        """Create a card for a liability"""
         frame = QFrame()
         frame.setObjectName("cardFrame")
         layout = QVBoxLayout(frame)
         
-        header = QHBoxLayout()
         name_label = QLabel(liability['name'])
         name_label.setObjectName("subtitle")
-        header.addWidget(name_label)
-        header.addStretch()
-        layout.addLayout(header)
+        layout.addWidget(name_label)
         
         info = QHBoxLayout()
-        balance = liability.get('balance', 0)
-        original_balance = liability.get('original_balance', balance)
-        
-        balance_label = QLabel(f"Balance: ${balance:,.2f}")
+        balance_label = QLabel(f"Balance: ${liability.get('balance', 0):,.2f}")
         balance_label.setObjectName("negativeLabel")
-        
-        original_label = QLabel(f"Original: ${original_balance:,.2f}")
-        original_label.setObjectName("mutedLabel")
-        
-        paid_off = original_balance - balance
-        if paid_off > 0:
-            paid_label = QLabel(f"Paid Off: ${paid_off:,.2f}")
-            paid_label.setObjectName("positiveLabel")
-            info.addWidget(paid_label)
-        
         info.addWidget(balance_label)
-        info.addWidget(original_label)
         info.addStretch()
         layout.addLayout(info)
         
         buttons = QHBoxLayout()
-        
         edit_btn = QPushButton("Edit")
         edit_btn.clicked.connect(lambda: self.edit_liability_requested.emit(liability))
-        
         delete_btn = QPushButton("Delete")
         delete_btn.setObjectName("dangerButton")
         delete_btn.clicked.connect(lambda: self.delete_liability_requested.emit(liability))
-        
         buttons.addWidget(edit_btn)
         buttons.addWidget(delete_btn)
         buttons.addStretch()
@@ -620,6 +600,7 @@ class AccountManagementView(QDialog):
             data['interest_rate'] = self.account_interest_input.text().strip()
             data['minimum_payment'] = self.account_min_payment_input.text().strip()
             data['payment_due_day'] = self.account_due_day_input.text().strip()
+            data['credit_limit'] = self.account_credit_limit_input.text().strip()
         
         return data
     
@@ -633,6 +614,8 @@ class AccountManagementView(QDialog):
         if account_data.get('type', '').lower() == 'credit':
             self.account_interest_input.setText(str(account_data.get('interest_rate', '')))
             self.account_min_payment_input.setText(str(account_data.get('minimum_payment', '')))
+            credit_limit = account_data.get('credit_limit')
+            self.account_credit_limit_input.setText(str(credit_limit) if credit_limit is not None else '')
         
         self.account_add_btn.setVisible(False)
         self.account_update_btn.setVisible(True)
@@ -644,6 +627,8 @@ class AccountManagementView(QDialog):
         self.account_balance_input.clear()
         self.account_interest_input.clear()
         self.account_min_payment_input.clear()
+        self.account_due_day_input.clear()
+        self.account_credit_limit_input.clear()
         
         self.account_add_btn.setVisible(True)
         self.account_update_btn.setVisible(False)
@@ -720,29 +705,17 @@ class AccountManagementView(QDialog):
         return reply == QMessageBox.Yes
     
     def confirm_close(self, account_name):
-        """Ask user to confirm closing an account"""
+        """Ask user to confirm closing account"""
         reply = QMessageBox.question(
             self,
-            "Confirm Close Account",
-            f"Are you sure you want to close account '{account_name}'?\n\n"
-            f"The account will be hidden from view but all transaction history will be preserved.\n"
-            f"You can reopen it later if needed.",
+            "Confirm Close",
+            f"Are you sure you want to close account '{account_name}'?\n"
+            "The account and its transactions will be preserved but hidden from view.",
             QMessageBox.Yes | QMessageBox.No,
             QMessageBox.No
         )
         return reply == QMessageBox.Yes
     
-    def on_show_closed_toggled(self, checked):
-        """Handle show/hide closed accounts toggle"""
-        self.show_closed_accounts = checked
-        
-        if checked:
-            self.show_closed_checkbox.setText("Hide Closed Accounts")
-        else:
-            self.show_closed_checkbox.setText("Show Closed Accounts")
-        
-        self.show_closed_toggled.emit(checked)
-    
-    def set_dark_mode(self, enabled):
+    def set_dark_mode(self, dark_mode):
         """Update theme"""
-        self.dark_mode = enabled
+        self.dark_mode = dark_mode

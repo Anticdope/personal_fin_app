@@ -51,11 +51,11 @@ class DashboardView(QWidget):
         main_header.addWidget(self.dark_mode_toggle)
         layout.addLayout(main_header)
         
-        # TOP PANE SECTION
+        # TOP PANE SECTION — stretch=1 so it shares space equally with bottom
         top_section = self._create_pane_section("top")
-        layout.addWidget(top_section)
+        layout.addWidget(top_section, 1)
         
-        # Manage buttons
+        # Manage buttons — fixed height, no stretch
         manage_layout = QHBoxLayout()
         manage_layout.setSpacing(10)
         
@@ -71,7 +71,7 @@ class DashboardView(QWidget):
         manage_layout.addWidget(manage_acc_btn)
         layout.addLayout(manage_layout)
         
-        # BOTTOM PANE SECTION
+        # BOTTOM PANE SECTION — stretch=1 so it shares space equally with top
         bottom_section = self._create_pane_section("bottom")
         layout.addWidget(bottom_section, 1)
     
@@ -121,7 +121,7 @@ class DashboardView(QWidget):
         header.addWidget(next_btn)
         section_layout.addLayout(header)
         
-        # Stacked widget for panes
+        # Stacked widget expands to fill the section
         stacked = QStackedWidget()
         
         if section_type == "top":
@@ -129,7 +129,8 @@ class DashboardView(QWidget):
         else:
             self.bottom_stacked = stacked
         
-        section_layout.addWidget(stacked)
+        # stretch=1 so the stacked widget fills remaining section height
+        section_layout.addWidget(stacked, 1)
         
         return section
     

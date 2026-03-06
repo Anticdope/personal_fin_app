@@ -211,11 +211,11 @@ class CategoryManagementView(QDialog):
             buttons = QHBoxLayout()
             
             edit_btn = QPushButton("Edit")
-            edit_btn.clicked.connect(lambda: self.edit_requested.emit(category))
+            edit_btn.clicked.connect(lambda checked, c=category: self.edit_requested.emit(c))
             
             delete_btn = QPushButton("Delete")
             delete_btn.setObjectName("dangerButton")
-            delete_btn.clicked.connect(lambda: self.delete_requested.emit(category))
+            delete_btn.clicked.connect(lambda checked, c=category: self.delete_requested.emit(c))
             
             buttons.addWidget(edit_btn)
             buttons.addWidget(delete_btn)

@@ -9,9 +9,10 @@ import uuid
 class RecurringService:
     """Service: Business logic for recurring transactions"""
     
-    def __init__(self, recurring_repo, transaction_repo):
+    def __init__(self, recurring_repo, transaction_repo, transaction_service=None):
         self.recurring_repo = recurring_repo
         self.transaction_repo = transaction_repo
+        self.transaction_service = transaction_service  # Used to apply balance on auto-post
     
     def get_all_recurring(self):
         """Get all recurring transaction patterns"""
@@ -130,6 +131,11 @@ class RecurringService:
                 # Post the transaction
                 transaction['status'] = 'posted'
                 self.transaction_repo.update_transaction(year, month, day, transaction)
+                
+                # Apply balance effect now that the transaction is posted
+                if self.transaction_service:
+                    self.transaction_service.apply_transaction_to_balance(transaction)
+                
                 posted.append(transaction)
         
         return posted

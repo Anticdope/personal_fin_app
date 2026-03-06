@@ -1,42 +1,23 @@
 [
   {
-    "id": "cat-89abcbb3",
-    "name": "General Income",
-    "color": "#27AE60",
-    "type": "income",
-    "special": true,
-    "budget": 0.0
-  },
-  {
-    "id": "cat-398d9697",
-    "name": "General Expense",
-    "color": "#E74C3C",
+    "name": "Books",
+    "color": "#808080",
+    "budget": 100.0,
     "type": "expense",
-    "special": true,
-    "budget": 0.0
+    "id": "cat-6d475d49"
   },
   {
-    "id": "cat-98e77134",
-    "name": "General Savings",
-    "color": "#3498DB",
-    "type": "savings",
-    "special": true,
-    "budget": 0.0
+    "name": "Restaurants",
+    "color": "#ffaa7f",
+    "budget": 200.0,
+    "type": "expense",
+    "id": "cat-56a0db99"
   },
   {
-    "id": "cat-59ca8fcc",
-    "name": "Transfer",
-    "color": "#95A5A6",
-    "type": "special",
-    "special": true,
-    "budget": 0.0
-  },
-  {
-    "id": "cat-77f2d3d5",
-    "name": "Debt Payment",
-    "color": "#E67E22",
-    "type": "special",
-    "special": true,
-    "budget": 0.0
+    "name": "Rent",
+    "color": "#aa55ff",
+    "budget": 2234.0,
+    "type": "expense",
+    "id": "cat-bad41d3c"
   }
 ]

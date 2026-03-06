@@ -18,7 +18,14 @@ class TransactionService:
         """
         Apply a transaction's effects to account/liability balances
         Handles: Regular transactions, Transfers, Debt Payments
+        
+        NOTE: Pending transactions are skipped — balance is only affected
+        when a transaction is posted (status != 'pending').
         """
+        # Never apply pending transactions to balances
+        if transaction.get('status') == 'pending':
+            return
+        
         category = transaction.get('category', '')
         
         if category == 'Transfer':

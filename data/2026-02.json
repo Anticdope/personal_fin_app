@@ -1,0 +1,36 @@
+{
+  "21": [
+    {
+      "title": "Paypal Credit Payment",
+      "amount": 18.99,
+      "category": "Debt Payment",
+      "source_account": "Gate City",
+      "target_debt": "Paypal Credit",
+      "target_type": "credit",
+      "status": "posted",
+      "category_id": null
+    }
+  ],
+  "22": [
+    {
+      "title": "Pizza",
+      "amount": -25.91,
+      "category": "Restaurants",
+      "account": "Gate City",
+      "transaction_type": "Expense",
+      "status": "posted",
+      "category_id": "cat-56a0db99",
+      "account_id": "acc-849ae440"
+    },
+    {
+      "title": "Boba",
+      "amount": -19.93,
+      "category": "Restaurants",
+      "account": "Gate City",
+      "transaction_type": "Expense",
+      "status": "posted",
+      "category_id": "cat-56a0db99",
+      "account_id": "acc-849ae440"
+    }
+  ]
+}
