@@ -1,51 +1,111 @@
 {
-  "categories": [
+  "categories": [],
+  "accounts": [
     {
       "item": {
-        "name": "Books",
-        "color": "#808080",
-        "budget": 100.0,
-        "type": "expense",
-        "id": "cat-d11f3d48"
+        "name": "Citi Diamond",
+        "type": "credit",
+        "balance": 102.6,
+        "closed": false,
+        "interest_rate": 0.0,
+        "minimum_payment": 0.0,
+        "original_balance": 102.6,
+        "payment_due_day": null,
+        "id": "acc-07d517a7"
       },
-      "deleted_at": "2026-02-21T20:11:01.257610"
+      "deleted_at": "2026-04-10T21:14:18.483407"
     }
   ],
-  "accounts": [],
   "transactions": [
     {
       "item": {
-        "account": "Gate City",
-        "account_id": "acc-849ae440",
-        "amount": -2234.0,
-        "category": "Rent",
-        "category_id": "cat-bad41d3c",
+        "account": "Gate City Bank",
+        "account_id": "acc-3ab6d50b",
+        "amount": -37.59,
+        "category": "Household",
+        "category_id": "cat-6eb42c82",
         "status": "posted",
-        "title": "Rent",
+        "title": "Keycaps",
         "transaction_type": "Expense"
       },
       "date": {
         "year": 2026,
-        "month": 6,
-        "day": 1
+        "month": 4,
+        "day": 12
       },
-      "deleted_at": "2026-02-22T17:44:21.040054"
+      "deleted_at": "2026-04-12T19:04:48.683452"
     },
     {
       "item": {
-        "account": "Gate City",
-        "amount": -2234.0,
-        "category": "Rent",
+        "amount": 1607.68,
+        "category": "Debt Payment",
+        "category_id": null,
+        "source_account": "Nami Bank",
         "status": "posted",
-        "title": "Rent",
+        "target_debt": "Thai Credit Card",
+        "target_type": "credit",
+        "title": "Thai Credit Payment"
+      },
+      "date": {
+        "year": 2026,
+        "month": 4,
+        "day": 18
+      },
+      "deleted_at": "2026-04-18T12:17:40.013394"
+    },
+    {
+      "item": {
+        "account": "Gate City Bank",
+        "account_id": "acc-3ab6d50b",
+        "amount": -20.84,
+        "category": "Dining",
+        "category_id": "cat-6af9e349",
+        "status": "posted",
+        "title": "Boba",
         "transaction_type": "Expense"
       },
       "date": {
         "year": 2026,
-        "month": 6,
-        "day": 1
+        "month": 4,
+        "day": 26
       },
-      "deleted_at": "2026-02-22T17:46:03.829617"
+      "deleted_at": "2026-04-27T17:11:35.834093"
+    },
+    {
+      "item": {
+        "account": "Gate City Bank",
+        "account_id": "acc-3ab6d50b",
+        "amount": -8.25,
+        "category": "Household",
+        "category_id": "cat-6eb42c82",
+        "status": "posted",
+        "title": "Goodwill House",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2026,
+        "month": 4,
+        "day": 26
+      },
+      "deleted_at": "2026-04-27T17:12:05.736691"
+    },
+    {
+      "item": {
+        "account": "Gate City Bank",
+        "account_id": "acc-3ab6d50b",
+        "amount": -22.48,
+        "category": "Dining",
+        "category_id": "cat-6af9e349",
+        "status": "posted",
+        "title": "Burrito",
+        "transaction_type": "Expense"
+      },
+      "date": {
+        "year": 2026,
+        "month": 4,
+        "day": 26
+      },
+      "deleted_at": "2026-04-27T17:12:10.907097"
     }
   ],
   "assets": [],

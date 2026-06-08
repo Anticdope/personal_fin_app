@@ -174,6 +174,11 @@ class CalculationService:
                     if transaction.get('status') == 'pending':
                         continue
                     
+                    # Skip transfers and debt payments — not real income/expenses
+                    category = transaction.get('category', '')
+                    if category in ('Transfer', 'Debt Payment'):
+                        continue
+                    
                     amount = float(transaction.get('amount', 0))
                     
                     if amount > 0:

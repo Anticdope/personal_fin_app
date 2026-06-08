@@ -1,23 +1,107 @@
 [
   {
-    "name": "Books",
-    "color": "#808080",
-    "budget": 100.0,
-    "type": "expense",
-    "id": "cat-6d475d49"
-  },
-  {
-    "name": "Restaurants",
-    "color": "#ffaa7f",
+    "name": "Dining",
+    "color": "#ff5500",
     "budget": 200.0,
     "type": "expense",
-    "id": "cat-56a0db99"
+    "id": "cat-6af9e349"
   },
   {
-    "name": "Rent",
-    "color": "#aa55ff",
-    "budget": 2234.0,
+    "name": "Cosmetics",
+    "color": "#ffaaff",
+    "budget": 200.0,
     "type": "expense",
-    "id": "cat-bad41d3c"
+    "id": "cat-a4cec041"
+  },
+  {
+    "name": "Groceries",
+    "color": "#00aa00",
+    "budget": 800.0,
+    "type": "expense",
+    "id": "cat-a78442a3"
+  },
+  {
+    "name": "Clothes",
+    "color": "#ffaa00",
+    "budget": 50.0,
+    "type": "expense",
+    "id": "cat-2c7e213d"
+  },
+  {
+    "name": "Household",
+    "color": "#00557f",
+    "budget": 50.0,
+    "type": "expense",
+    "id": "cat-6eb42c82"
+  },
+  {
+    "name": "Books",
+    "color": "#ffff7f",
+    "budget": 100.0,
+    "type": "expense",
+    "id": "cat-dd5f413d"
+  },
+  {
+    "name": "Tools",
+    "color": "#aaffff",
+    "budget": 50.0,
+    "type": "expense",
+    "id": "cat-64d339ca"
+  },
+  {
+    "name": "Subscriptions",
+    "color": "#550000",
+    "budget": 110.0,
+    "type": "expense",
+    "id": "cat-7179b333"
+  },
+  {
+    "name": "Transportation",
+    "color": "#ff007f",
+    "budget": 100.0,
+    "type": "expense",
+    "id": "cat-b705378a"
+  },
+  {
+    "name": "Fees",
+    "color": "#808080",
+    "budget": 0.0,
+    "type": "expense",
+    "id": "cat-148244ff"
+  },
+  {
+    "name": "Miscellaneous",
+    "color": "#aa557f",
+    "budget": 100.0,
+    "type": "expense",
+    "id": "cat-415739cb"
+  },
+  {
+    "name": "Parents",
+    "color": "#aaaa00",
+    "budget": 315.0,
+    "type": "expense",
+    "id": "cat-c12320ca"
+  },
+  {
+    "name": "Thai Shopping",
+    "color": "#ffffff",
+    "budget": 50.0,
+    "type": "expense",
+    "id": "cat-f9394993"
+  },
+  {
+    "name": "Business Expenses",
+    "color": "#ffff00",
+    "budget": 300.0,
+    "type": "expense",
+    "id": "cat-898fec76"
+  },
+  {
+    "name": "Medicine",
+    "color": "#55ffff",
+    "budget": 350.0,
+    "type": "expense",
+    "id": "cat-a21689c3"
   }
 ]

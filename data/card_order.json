@@ -1,19 +1,17 @@
 {
   "account_balances": [
-    "Gate City",
-    "Fidelity",
+    "Gate City Bank",
     "Dillan Chime",
     "Nami Chime",
-    "Thai Bank Account",
-    "Paypal Mastercard",
-    "Credit One",
-    "Prime Store",
+    "Nami Bank",
+    "Fidelity",
     "Citi Diamond",
-    "Paypal Credit",
     "Citi Costco",
-    "Car Care",
-    "Capital One High Limit",
-    "Capital One Low Limit",
-    "KTC Card"
+    "Paypal Master",
+    "Amazon",
+    "Credit One",
+    "Capital One Big",
+    "Capital One Small",
+    "Thai Credit Card"
   ]
 }

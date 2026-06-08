@@ -12,7 +12,8 @@ class YTDModel:
         """
         Calculate year-to-date income, expenses, and net
         Only includes posted transactions (not pending)
-        
+        Excludes transfers and debt payments (internal money movements)
+
         Returns dict with income, expenses, and net
         """
         ytd_income = 0.0
@@ -26,6 +27,12 @@ class YTDModel:
                 for transaction in day_transactions:
                     # Skip pending transactions - only count posted
                     if transaction.get('status') == 'pending':
+                        continue
+
+                    # Skip transfers and debt payments — internal movements,
+                    # not real income or expenses
+                    category = transaction.get('category', '')
+                    if category in ('Transfer', 'Debt Payment'):
                         continue
                     
                     amount = float(transaction.get('amount', 0))

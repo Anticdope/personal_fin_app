@@ -128,9 +128,10 @@ class RecurringService:
             today = datetime.now().date()
             
             if auto_post_date <= today:
-                # Post the transaction
+                # Post the transaction - pass old (pending) and new (posted) copies
+                old_transaction = transaction.copy()
                 transaction['status'] = 'posted'
-                self.transaction_repo.update_transaction(year, month, day, transaction)
+                self.transaction_repo.update_transaction(year, month, day, old_transaction, transaction)
                 
                 # Apply balance effect now that the transaction is posted
                 if self.transaction_service:

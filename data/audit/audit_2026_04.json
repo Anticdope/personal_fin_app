@@ -1,0 +1,2034 @@
+[
+  {
+    "timestamp": "2026-04-10T21:26:57.429955",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 1290.65,
+      "change_amount": 1290.65
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Starting Balance"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:29:01.953307",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 93.0,
+      "change_amount": 93.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Starting Balance"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:30:17.589408",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-ae1b26d7",
+    "entity_name": "Nami Chime",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 2816.57,
+      "change_amount": 2816.57
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Starting Balance"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:31:19.760094",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3da752e5",
+    "entity_name": "Fidelity",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 1119.44,
+      "change_amount": 1119.44
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Starting Balance"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:47:51.847992",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-ae1b26d7",
+    "entity_name": "Nami Chime",
+    "changes": {
+      "old_balance": 2816.57,
+      "new_balance": 2788.8700000000003,
+      "change_amount": -27.699999999999818
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Mochinut"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:48:53.833952",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-ae1b26d7",
+    "entity_name": "Nami Chime",
+    "changes": {
+      "old_balance": 2788.8700000000003,
+      "new_balance": 2704.9900000000002,
+      "change_amount": -83.88000000000011
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Dough Zone"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:50:52.658472",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-ae1b26d7",
+    "entity_name": "Nami Chime",
+    "changes": {
+      "old_balance": 2704.9900000000002,
+      "new_balance": 2672.38,
+      "change_amount": -32.61000000000013
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Sephora - Skincare"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:51:47.679264",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-ae1b26d7",
+    "entity_name": "Nami Chime",
+    "changes": {
+      "old_balance": 2672.38,
+      "new_balance": 0.38000000000010914,
+      "change_amount": -2672.0
+    },
+    "metadata": {
+      "reason": "transfer_out",
+      "transaction_title": "Chime to Gte City"
+    }
+  },
+  {
+    "timestamp": "2026-04-10T21:51:47.685145",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 1290.65,
+      "new_balance": 3962.65,
+      "change_amount": 2672.0
+    },
+    "metadata": {
+      "reason": "transfer_in",
+      "transaction_title": "Chime to Gte City"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T18:53:20.696349",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2030.81,
+      "new_balance": 2048.19,
+      "change_amount": 17.38000000000011
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T18:56:07.219900",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2048.19,
+      "new_balance": 2064.82,
+      "change_amount": 16.63000000000011
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T18:56:28.406866",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2064.82,
+      "new_balance": 2079.15,
+      "change_amount": 14.329999999999927
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T18:57:37.541951",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3962.65,
+      "new_balance": 3927.65,
+      "change_amount": -35.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Songkran Festival"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T18:57:51.856896",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3927.65,
+      "new_balance": 3917.65,
+      "change_amount": -10.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Songkran"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:00:25.509869",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3917.65,
+      "new_balance": 3907.65,
+      "change_amount": -10.0
+    },
+    "metadata": {
+      "reason": "transfer_out",
+      "transaction_title": "Transfer"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:00:25.510986",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4ff37c98",
+    "entity_name": "Dillan Chime",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 10.0,
+      "change_amount": 10.0
+    },
+    "metadata": {
+      "reason": "transfer_in",
+      "transaction_title": "Transfer"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:00:47.053781",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4ff37c98",
+    "entity_name": "Dillan Chime",
+    "changes": {
+      "old_balance": 10.0,
+      "new_balance": 2.0,
+      "change_amount": -8.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Songkran"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:01:27.343805",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3907.65,
+      "new_balance": 3886.65,
+      "change_amount": -21.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Songkran Groceries"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:04:16.198541",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3886.65,
+      "new_balance": 3849.06,
+      "change_amount": -37.590000000000146
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Keycaps"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:04:48.685940",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3849.06,
+      "new_balance": 3886.65,
+      "change_amount": 37.590000000000146
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Keycaps"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:06:14.729772",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3886.65,
+      "new_balance": 3851.9100000000003,
+      "change_amount": -34.73999999999978
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Barnes"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T19:09:26.916996",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3851.9100000000003,
+      "new_balance": 3814.32,
+      "change_amount": -37.590000000000146
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Keycaps Ebay"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T10:08:14.150860",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3678.72,
+      "new_balance": 3664.73,
+      "change_amount": -13.989999999999782
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Crunchyroll"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T10:09:02.301735",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3814.32,
+      "new_balance": 3804.9,
+      "change_amount": -9.420000000000073
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "ChatGPT"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T11:45:03.786337",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 3804.9,
+      "new_balance": 811.52,
+      "change_amount": -2993.38
+    },
+    "metadata": {
+      "reason": "transfer_out",
+      "transaction_title": "Bill Pay"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T11:45:03.787955",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 93.0,
+      "new_balance": 3086.38,
+      "change_amount": 2993.38
+    },
+    "metadata": {
+      "reason": "transfer_in",
+      "transaction_title": "Bill Pay"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T11:46:16.512469",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 811.52,
+      "new_balance": 809.53,
+      "change_amount": -1.990000000000009
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Transaction Fee"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T11:46:29.723164",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 809.53,
+      "new_balance": 807.54,
+      "change_amount": -1.990000000000009
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Transaction Fee"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T11:48:49.112200",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 807.54,
+      "new_balance": 618.48,
+      "change_amount": -189.05999999999995
+    },
+    "metadata": {
+      "reason": "transfer_out",
+      "transaction_title": "Bill Pay"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T11:48:49.119285",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 3086.38,
+      "new_balance": 3275.44,
+      "change_amount": 189.05999999999995
+    },
+    "metadata": {
+      "reason": "transfer_in",
+      "transaction_title": "Bill Pay"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T16:23:20.581156",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-99d44b83",
+    "entity_name": "Credit One",
+    "changes": {
+      "old_balance": 1544.14,
+      "new_balance": 1400.0,
+      "change_amount": -144.1400000000001
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Citi Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T16:23:20.582870",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 618.48,
+      "new_balance": 474.34000000000003,
+      "change_amount": -144.14
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Citi Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T16:46:48.734808",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3650.7400000000002,
+      "new_balance": 3657.3500000000004,
+      "change_amount": 6.610000000000127
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "E-Reader"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T20:56:19.093044",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2079.15,
+      "new_balance": 2110.9100000000003,
+      "change_amount": 31.76000000000022
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Grocery"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T10:49:04.866046",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-77c8874a",
+    "entity_name": "Citi Diamond",
+    "changes": {
+      "old_balance": 102.6,
+      "new_balance": 117.6,
+      "change_amount": 15.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Orca"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T10:49:35.980469",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-77c8874a",
+    "entity_name": "Citi Diamond",
+    "changes": {
+      "old_balance": 117.6,
+      "new_balance": 138.92,
+      "change_amount": 21.319999999999993
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Claude"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T10:50:12.493699",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dfa2ce53",
+    "entity_name": "Paypal Credit",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 18.99,
+      "change_amount": 18.99
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Hulu"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T12:05:08.092117",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 474.34000000000003,
+      "new_balance": 156.8,
+      "change_amount": -317.54
+    },
+    "metadata": {
+      "reason": "transfer_out",
+      "transaction_title": "Transfer"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T12:05:08.099848",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 3275.44,
+      "new_balance": 3592.98,
+      "change_amount": 317.53999999999996
+    },
+    "metadata": {
+      "reason": "transfer_in",
+      "transaction_title": "Transfer"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:38:46.951308",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-77c8874a",
+    "entity_name": "Citi Diamond",
+    "changes": {
+      "old_balance": 138.92,
+      "new_balance": 153.92,
+      "change_amount": 15.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Orca"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:39:19.300851",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-77c8874a",
+    "entity_name": "Citi Diamond",
+    "changes": {
+      "old_balance": 153.92,
+      "new_balance": 0.0,
+      "change_amount": -153.92
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Citi Diamond"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:39:19.308117",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 156.8,
+      "new_balance": 2.880000000000024,
+      "change_amount": -153.92
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Citi Diamond"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:40:35.892895",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2110.9100000000003,
+      "new_balance": 2096.5800000000004,
+      "change_amount": -14.329999999999927
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:40:35.910353",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2096.5800000000004,
+      "new_balance": 2111.01,
+      "change_amount": 14.429999999999836
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:40:45.425841",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2111.01,
+      "new_balance": 2096.5800000000004,
+      "change_amount": -14.429999999999836
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:40:45.437187",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2096.5800000000004,
+      "new_balance": 2110.9100000000003,
+      "change_amount": 14.329999999999927
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:41:29.788791",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2110.9100000000003,
+      "new_balance": 1700.1000000000004,
+      "change_amount": -410.80999999999995
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Costco Card"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:41:29.797309",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 2.880000000000024,
+      "new_balance": -407.92999999999995,
+      "change_amount": -410.80999999999995
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Costco Card"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:42:57.516591",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 1700.1000000000004,
+      "new_balance": 1682.7200000000003,
+      "change_amount": -17.38000000000011
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:42:57.528293",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 1682.7200000000003,
+      "new_balance": 1700.0000000000002,
+      "change_amount": 17.279999999999973
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:44:31.419912",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3b58b912",
+    "entity_name": "Amazon",
+    "changes": {
+      "old_balance": 16.53,
+      "new_balance": 0.0,
+      "change_amount": -16.53
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Amazon"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:44:31.431750",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": -407.92999999999995,
+      "new_balance": -424.4599999999999,
+      "change_amount": -16.529999999999973
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Amazon"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:45:19.832653",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4fedf2ae",
+    "entity_name": "Capital One Big",
+    "changes": {
+      "old_balance": 2968.28,
+      "new_balance": 3026.77,
+      "change_amount": 58.48999999999978
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Interest Charge"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:50:04.530483",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": -424.4599999999999,
+      "new_balance": 2074.5099999999998,
+      "change_amount": 2498.97
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Paycheck"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:55:44.652125",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4ff37c98",
+    "entity_name": "Dillan Chime",
+    "changes": {
+      "old_balance": 2.0,
+      "new_balance": 10.0,
+      "change_amount": 8.0
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Songkran"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:55:44.663438",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 2074.5099999999998,
+      "new_balance": 2066.5099999999998,
+      "change_amount": -8.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Songkran"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:57:07.131018",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4fedf2ae",
+    "entity_name": "Capital One Big",
+    "changes": {
+      "old_balance": 3026.77,
+      "new_balance": 2600.0,
+      "change_amount": -426.77
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Capital One Big"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T07:57:07.133627",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 2066.5099999999998,
+      "new_balance": 1639.7399999999998,
+      "change_amount": -426.77
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Capital One Big"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:00:58.191475",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3657.3500000000004,
+      "new_balance": 3749.6400000000003,
+      "change_amount": 92.28999999999996
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Interest"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:03:18.538638",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3749.6400000000003,
+      "new_balance": 3755.6500000000005,
+      "change_amount": 6.010000000000218
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Pocket E-Reader Tool"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:04:10.125365",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3755.6500000000005,
+      "new_balance": 3784.8700000000003,
+      "change_amount": 29.2199999999998
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Steam Game"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:10:37.131934",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3784.8700000000003,
+      "new_balance": 3820.2300000000005,
+      "change_amount": 35.36000000000013
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Balance Correction"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:11:53.158988",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3820.2300000000005,
+      "new_balance": 3000.0000000000005,
+      "change_amount": -820.23
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Paypal Master"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:11:53.168114",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 1639.7399999999998,
+      "new_balance": 819.5099999999998,
+      "change_amount": -820.23
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Paypal Master"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:12:58.021226",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dfa2ce53",
+    "entity_name": "Paypal Credit",
+    "changes": {
+      "old_balance": 18.99,
+      "new_balance": 0.0,
+      "change_amount": -18.99
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Paypal Credit"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:12:58.029993",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 819.5099999999998,
+      "new_balance": 800.5199999999998,
+      "change_amount": -18.99000000000001
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Paypal Credit"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T11:59:30.596591",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3b58b912",
+    "entity_name": "Amazon",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 46.47,
+      "change_amount": 46.47
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Level/Stud Finder Amazon"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:00:46.074095",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3b58b912",
+    "entity_name": "Amazon",
+    "changes": {
+      "old_balance": 46.47,
+      "new_balance": 64.67,
+      "change_amount": 18.200000000000003
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Cosmetic Amazon"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:01:22.342723",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3b58b912",
+    "entity_name": "Amazon",
+    "changes": {
+      "old_balance": 64.67,
+      "new_balance": 189.60000000000002,
+      "change_amount": 124.93000000000002
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Curtains Amazon"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:08:45.663046",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 800.5199999999998,
+      "new_balance": 700.0299999999997,
+      "change_amount": -100.49000000000001
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Reach Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:09:35.019176",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4413efc1",
+    "entity_name": "Thai Credit Card",
+    "changes": {
+      "old_balance": 1607.68,
+      "new_balance": 0.0,
+      "change_amount": -1607.68
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Thai Credit Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:09:35.027669",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 3592.98,
+      "new_balance": 1985.3,
+      "change_amount": -1607.68
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Thai Credit Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:14:10.881767",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 1985.3,
+      "new_balance": 1978.75,
+      "change_amount": -6.5499999999999545
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Shopee"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:17:40.016662",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 1978.75,
+      "new_balance": 3586.4300000000003,
+      "change_amount": 1607.6800000000003
+    },
+    "metadata": {
+      "reason": "debt_payment_reverse",
+      "transaction_title": "Thai Credit Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:17:40.027233",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4413efc1",
+    "entity_name": "Thai Credit Card",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 1607.68,
+      "change_amount": 1607.68
+    },
+    "metadata": {
+      "reason": "debt_payment_reverse",
+      "transaction_title": "Thai Credit Payment"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:19:47.141896",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4413efc1",
+    "entity_name": "Thai Credit Card",
+    "changes": {
+      "old_balance": 1607.68,
+      "new_balance": 1658.8700000000001,
+      "change_amount": 51.190000000000055
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Balance Correction"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:25:37.035766",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 3586.4300000000003,
+      "new_balance": 3270.88,
+      "change_amount": -315.5500000000002
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Parents Money"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:26:10.363035",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4413efc1",
+    "entity_name": "Thai Credit Card",
+    "changes": {
+      "old_balance": 1658.8700000000001,
+      "new_balance": 2.2737367544323206e-13,
+      "change_amount": -1658.87
+    },
+    "metadata": {
+      "reason": "debt_payment",
+      "transaction_title": "Thai Credit Card"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:26:10.371577",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 3270.88,
+      "new_balance": 1612.0100000000002,
+      "change_amount": -1658.87
+    },
+    "metadata": {
+      "reason": "debt_payment_deduction",
+      "transaction_title": "Thai Credit Card"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:31:33.789886",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 1612.0100000000002,
+      "new_balance": 1564.9900000000002,
+      "change_amount": -47.01999999999998
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Thai Shopee"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:31:51.615645",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 1564.9900000000002,
+      "new_balance": 1571.5400000000002,
+      "change_amount": 6.5499999999999545
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Shopee"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T12:31:51.633802",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-dff8abdf",
+    "entity_name": "Nami Bank",
+    "changes": {
+      "old_balance": 1571.5400000000002,
+      "new_balance": 1564.9900000000002,
+      "change_amount": -6.5499999999999545
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Shopee"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T11:03:15.623839",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 1700.0000000000002,
+      "new_balance": 1746.1800000000003,
+      "change_amount": 46.180000000000064
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Walmart"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T11:03:40.882555",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 1746.1800000000003,
+      "new_balance": 1749.4900000000002,
+      "change_amount": 3.3099999999999454
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco Snack"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T11:04:11.429039",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 1749.4900000000002,
+      "new_balance": 1804.7300000000002,
+      "change_amount": 55.24000000000001
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco Household"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T11:04:31.708211",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 1804.7300000000002,
+      "new_balance": 2026.5800000000002,
+      "change_amount": 221.8499999999999
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco Groceries"
+    }
+  },
+  {
+    "timestamp": "2026-04-20T10:40:56.110779",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 700.0299999999997,
+      "new_balance": 697.3699999999998,
+      "change_amount": -2.659999999999968
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Lime Ride"
+    }
+  },
+  {
+    "timestamp": "2026-04-22T18:14:31.015207",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 697.3699999999998,
+      "new_balance": 458.3699999999998,
+      "change_amount": -239.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "NWRA Business Licensing Fees"
+    }
+  },
+  {
+    "timestamp": "2026-04-22T18:15:09.069107",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 458.3699999999998,
+      "new_balance": 408.3699999999998,
+      "change_amount": -50.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "NWRA EIN Filing Fees"
+    }
+  },
+  {
+    "timestamp": "2026-04-22T18:15:24.843574",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 408.3699999999998,
+      "new_balance": 349.12999999999977,
+      "change_amount": -59.24000000000001
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Business Cards"
+    }
+  },
+  {
+    "timestamp": "2026-04-22T20:38:07.853142",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3000.0000000000005,
+      "new_balance": 3007.5700000000006,
+      "change_amount": 7.570000000000164
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Dropout"
+    }
+  },
+  {
+    "timestamp": "2026-04-22T20:40:04.927772",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3007.5700000000006,
+      "new_balance": 3017.5700000000006,
+      "change_amount": 10.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Food Worker Card"
+    }
+  },
+  {
+    "timestamp": "2026-04-22T20:41:15.530086",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3017.5700000000006,
+      "new_balance": 3109.8600000000006,
+      "change_amount": 92.28999999999996
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Interest"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:42:55.223021",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2026.5800000000002,
+      "new_balance": 2360.4300000000003,
+      "change_amount": 333.85000000000014
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Medicine"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:45:23.362298",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3109.8600000000006,
+      "new_balance": 3209.8600000000006,
+      "change_amount": 100.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Steam"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:45:42.164066",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3209.8600000000006,
+      "new_balance": 3212.8500000000004,
+      "change_amount": 2.9899999999997817
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "iCloud"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:46:13.894859",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3212.8500000000004,
+      "new_balance": 3218.1000000000004,
+      "change_amount": 5.25
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Blick"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:46:49.622618",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-ae1b26d7",
+    "entity_name": "Nami Chime",
+    "changes": {
+      "old_balance": 0.38000000000010914,
+      "new_balance": 13563.64,
+      "change_amount": 13563.259999999998
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Income"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:47:25.208574",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3218.1000000000004,
+      "new_balance": 3243.9700000000003,
+      "change_amount": 25.86999999999989
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Mochinut"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:48:00.139176",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3243.9700000000003,
+      "new_balance": 3301.94,
+      "change_amount": 57.9699999999998
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Groceries TT"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:48:25.460301",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3301.94,
+      "new_balance": 3243.9700000000003,
+      "change_amount": -57.9699999999998
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Groceries TT"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:48:25.475760",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3243.9700000000003,
+      "new_balance": 3301.94,
+      "change_amount": 57.9699999999998
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Groceries TT"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:49:10.411420",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3301.94,
+      "new_balance": 3243.9700000000003,
+      "change_amount": -57.9699999999998
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Groceries TT"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:49:10.419497",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-b56c937e",
+    "entity_name": "Paypal Master",
+    "changes": {
+      "old_balance": 3243.9700000000003,
+      "new_balance": 3301.94,
+      "change_amount": 57.9699999999998
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Cosmetics TT"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:49:26.232505",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 349.12999999999977,
+      "new_balance": 333.8599999999998,
+      "change_amount": -15.269999999999982
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Groceries TT"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:49:47.741679",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2360.4300000000003,
+      "new_balance": 2385.3100000000004,
+      "change_amount": 24.88000000000011
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Costco Groceries"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:50:08.434467",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-4c9bccdc",
+    "entity_name": "Citi Costco",
+    "changes": {
+      "old_balance": 2385.3100000000004,
+      "new_balance": 2412.9100000000003,
+      "change_amount": 27.59999999999991
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Clothes Costco"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:50:56.116202",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 333.8599999999998,
+      "new_balance": 325.6099999999998,
+      "change_amount": -8.25
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Goodwill"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:52:18.109134",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 325.6099999999998,
+      "new_balance": 304.7699999999998,
+      "change_amount": -20.839999999999975
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Comic"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:52:41.904685",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 304.7699999999998,
+      "new_balance": 262.7199999999998,
+      "change_amount": -42.05000000000001
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Yellowbee Groceries"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:53:02.034902",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 262.7199999999998,
+      "new_balance": 240.2399999999998,
+      "change_amount": -22.47999999999999
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Burrito"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:53:22.906059",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 240.2399999999998,
+      "new_balance": 237.5799999999998,
+      "change_amount": -2.6599999999999966
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Lime"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T19:53:51.461295",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-77c8874a",
+    "entity_name": "Citi Diamond",
+    "changes": {
+      "old_balance": 0.0,
+      "new_balance": 15.0,
+      "change_amount": 15.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Orca"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:07:32.794223",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 237.5799999999998,
+      "new_balance": 229.3299999999998,
+      "change_amount": -8.25
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Goodwill House"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:07:54.118315",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 229.3299999999998,
+      "new_balance": 214.0599999999998,
+      "change_amount": -15.27000000000001
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Groceries"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:08:41.961302",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 214.0599999999998,
+      "new_balance": 193.2199999999998,
+      "change_amount": -20.840000000000003
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Boba"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:09:12.683692",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 193.2199999999998,
+      "new_balance": 179.4199999999998,
+      "change_amount": -13.800000000000011
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Walgreens"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:09:40.826265",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 179.4199999999998,
+      "new_balance": 148.1299999999998,
+      "change_amount": -31.289999999999992
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Lunch Aloha"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:09:52.305754",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 148.1299999999998,
+      "new_balance": 138.1299999999998,
+      "change_amount": -10.0
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Drinks"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:10:08.224433",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 138.1299999999998,
+      "new_balance": 148.1299999999998,
+      "change_amount": 10.0
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Drinks"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:10:08.239803",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 148.1299999999998,
+      "new_balance": 137.1799999999998,
+      "change_amount": -10.949999999999989
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Drinks"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:10:29.780940",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 137.1799999999998,
+      "new_balance": 114.6999999999998,
+      "change_amount": -22.480000000000004
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Burrito"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:11:35.838208",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 114.6999999999998,
+      "new_balance": 135.5399999999998,
+      "change_amount": 20.83999999999999
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Boba"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:12:05.740827",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 135.5399999999998,
+      "new_balance": 143.7899999999998,
+      "change_amount": 8.25
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Goodwill House"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:12:10.911394",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 143.7899999999998,
+      "new_balance": 166.26999999999978,
+      "change_amount": 22.47999999999999
+    },
+    "metadata": {
+      "reason": "transaction_reverse",
+      "transaction_title": "Burrito"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:12:39.690355",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 166.26999999999978,
+      "new_balance": 160.18999999999977,
+      "change_amount": -6.0800000000000125
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Pens"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T17:13:06.864552",
+    "action": "balance_change",
+    "entity_type": "account",
+    "entity_id": "acc-3ab6d50b",
+    "entity_name": "Gate City Bank",
+    "changes": {
+      "old_balance": 160.18999999999977,
+      "new_balance": 148.14999999999978,
+      "change_amount": -12.039999999999992
+    },
+    "metadata": {
+      "reason": "transaction_add",
+      "transaction_title": "Household Items"
+    }
+  }
+]

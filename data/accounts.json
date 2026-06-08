@@ -1,157 +1,158 @@
 [
   {
-    "name": "Gate City",
+    "name": "Gate City Bank",
     "type": "debit",
-    "balance": 1931.20,
+    "balance": 148.14999999999978,
     "closed": false,
-    "id": "acc-849ae440"
+    "id": "acc-3ab6d50b",
+    "starting_balance": 0.0
   },
   {
-    "name": "Paypal Mastercard",
-    "type": "credit",
-    "balance": 4085.29,
+    "name": "Dillan Chime",
+    "type": "debit",
+    "balance": 10.0,
     "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 124.0,
-    "original_balance": 4085.29,
-    "payment_due_day": 7,
+    "id": "acc-4ff37c98",
+    "starting_balance": 0.0
+  },
+  {
+    "name": "Nami Chime",
+    "type": "debit",
+    "balance": 13563.64,
+    "closed": false,
+    "id": "acc-ae1b26d7",
+    "starting_balance": 0.0
+  },
+  {
+    "name": "Nami Bank",
+    "type": "debit",
+    "balance": 1564.9900000000002,
+    "closed": false,
+    "id": "acc-dff8abdf",
+    "starting_balance": 0.0
+  },
+  {
+    "name": "Fidelity",
+    "type": "debit",
+    "balance": 1119.44,
+    "closed": false,
+    "id": "acc-3da752e5",
+    "starting_balance": 0.0
+  },
+  {
+    "name": "Citi Diamond",
+    "type": "credit",
+    "balance": 15.0,
+    "closed": false,
+    "interest_rate": 25.99,
+    "minimum_payment": 35.0,
+    "original_balance": 102.6,
+    "payment_due_day": 2,
+    "credit_limit": 200.0,
+    "id": "acc-77c8874a",
+    "starting_balance": 102.6
+  },
+  {
+    "name": "Citi Costco",
+    "type": "credit",
+    "balance": 2412.9100000000003,
+    "closed": false,
+    "interest_rate": 26.74,
+    "minimum_payment": 41.0,
+    "original_balance": 2030.81,
+    "payment_due_day": 24,
+    "credit_limit": 5700.0,
+    "id": "acc-4c9bccdc",
+    "starting_balance": 2030.81
+  },
+  {
+    "name": "Paypal Master",
+    "type": "credit",
+    "balance": 3301.94,
+    "closed": false,
+    "interest_rate": 30.24,
+    "minimum_payment": 140.0,
+    "original_balance": 3678.72,
+    "payment_due_day": null,
     "credit_limit": 4000.0,
-    "id": "acc-d53ed750"
+    "id": "acc-b56c937e",
+    "starting_balance": 3678.72
   },
   {
     "name": "Paypal Credit",
     "type": "credit",
     "balance": 0.0,
     "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 18.99,
-    "original_balance": 18.99,
-    "payment_due_day": 18,
-    "credit_limit": 2000.0,
-    "id": "acc-9381dbcc"
-  },
-  {
-    "name": "Citi Diamond",
-    "type": "credit",
-    "balance": 110.2,
-    "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 200.0,
-    "original_balance": 110.2,
-    "payment_due_day": 2,
-    "credit_limit": 200.0,
-    "id": "acc-edc004a6"
-  },
-  {
-    "name": "Citi Costco",
-    "type": "credit",
-    "balance": 0.0,
-    "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 0.0,
+    "interest_rate": 29.89,
+    "minimum_payment": 40.0,
     "original_balance": 0.0,
-    "payment_due_day": 15,
-    "credit_limit": 5700.0,
-    "id": "acc-55e2d371"
+    "payment_due_day": 8,
+    "credit_limit": 2000.0,
+    "id": "acc-dfa2ce53"
   },
   {
-    "name": "Fidelity",
-    "type": "debit",
-    "balance": 0.0,
+    "name": "Amazon",
+    "type": "credit",
+    "balance": 189.60000000000002,
     "closed": false,
-    "id": "acc-d7dddc08"
-  },
-  {
-    "name": "Dillan Chime",
-    "type": "debit",
-    "balance": 0.0,
-    "closed": false,
-    "id": "acc-6505688e"
+    "interest_rate": 29.49,
+    "minimum_payment": 16.53,
+    "original_balance": 16.53,
+    "payment_due_day": 3,
+    "credit_limit": 500.0,
+    "id": "acc-3b58b912",
+    "starting_balance": 16.53
   },
   {
     "name": "Credit One",
     "type": "credit",
-    "balance": 1881.96,
+    "balance": 1400.0,
     "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 25.0,
-    "original_balance": 1881.96,
+    "interest_rate": 27.49,
+    "minimum_payment": 54.0,
+    "original_balance": 1544.14,
     "payment_due_day": 18,
     "credit_limit": 2000.0,
-    "id": "acc-e47105f2"
+    "id": "acc-99d44b83",
+    "starting_balance": 1544.14
   },
   {
-    "name": "Prime Store",
+    "name": "Capital One Big",
     "type": "credit",
-    "balance": 287.85,
+    "balance": 2600.0,
     "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 25.0,
-    "original_balance": 287.85,
-    "payment_due_day": 3,
-    "credit_limit": 500.0,
-    "id": "acc-9fbbf052"
-  },
-  {
-    "name": "Capital One Low Limit",
-    "type": "credit",
-    "balance": 0.0,
-    "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 0.0,
-    "original_balance": 0.0,
-    "payment_due_day": null,
-    "credit_limit": 200.0,
-    "id": "acc-ad4e8bd7"
-  },
-  {
-    "name": "Capital One High Limit",
-    "type": "credit",
-    "balance": 0.0,
-    "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 0.0,
-    "original_balance": 0.0,
-    "payment_due_day": null,
+    "interest_rate": 28.24,
+    "minimum_payment": 88,
+    "original_balance": 2968.28,
+    "payment_due_day": 7,
     "credit_limit": 4000.0,
-    "id": "acc-2ec5e5d1"
+    "id": "acc-4fedf2ae",
+    "starting_balance": 2968.28
   },
   {
-    "name": "Car Care",
+    "name": "Capital One Small",
     "type": "credit",
     "balance": 0.0,
     "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 0.0,
+    "interest_rate": 28.99,
+    "minimum_payment": 35.0,
     "original_balance": 0.0,
-    "payment_due_day": null,
-    "credit_limit": 250.0,
-    "id": "acc-d3191a89"
+    "payment_due_day": 20,
+    "credit_limit": 200.0,
+    "id": "acc-72769d7d",
+    "starting_balance": 0.0
   },
   {
-    "name": "Nami Chime",
-    "type": "debit",
-    "balance": 0.0,
-    "closed": false,
-    "id": "acc-ee59f19b"
-  },
-  {
-    "name": "Thai Bank Account",
-    "type": "debit",
-    "balance": 0.0,
-    "closed": false,
-    "id": "acc-171c81fc"
-  },
-  {
-    "name": "KTC Card",
+    "name": "Thai Credit Card",
     "type": "credit",
-    "balance": 0.0,
+    "balance": 2.2737367544323206e-13,
     "closed": false,
-    "interest_rate": 0.0,
-    "minimum_payment": 0.0,
-    "original_balance": 0.0,
+    "interest_rate": 16.0,
+    "minimum_payment": 35.0,
+    "original_balance": 1607.68,
     "payment_due_day": null,
-    "credit_limit": 2000.0,
-    "id": "acc-713ce10c"
+    "credit_limit": 3000.0,
+    "id": "acc-4413efc1",
+    "starting_balance": 1607.68
   }
 ]

@@ -93,6 +93,13 @@ class DataManager:
         # Migration service
         self.migration_service = MigrationService(self.data_dir)
         
+        # Run all pending migrations (legacy config.json + versioned migrations)
+        self.migration_service.run_all_migrations(
+            account_repo=self.account_repo,
+            liability_repo=self.liability_repo,
+            transaction_repo=self.transaction_repo
+        )
+        
         # Load data into memory (for quick access)
         self.categories = self.category_repo.get_all()
         self.accounts = self._ensure_account_fields(self.account_repo.get_all())
